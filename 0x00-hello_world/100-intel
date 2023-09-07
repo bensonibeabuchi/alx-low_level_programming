@@ -1,0 +1,4 @@
+#!/bin/bash
+CFILE="main.c"  # Replace with the actual C file name or use the variable as needed
+OUTPUT_FILE="${CFILE%.c}.s"
+gcc -S -masm=intel "$CFILE" -o "$OUTPUT_FILE"
