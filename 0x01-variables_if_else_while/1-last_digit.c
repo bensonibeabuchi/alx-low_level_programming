@@ -1,4 +1,9 @@
+#include <stdlib.h>
+
 #include <time.h>
+
+#include <stdio.h>
+
 /**
  * main - last digit is greater than or less than
  *
