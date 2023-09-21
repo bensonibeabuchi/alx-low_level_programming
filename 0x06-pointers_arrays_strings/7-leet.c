@@ -20,4 +20,4 @@ char *leet(char *s)
 			s[i] = k[j];
 	}
 	return (s);
-
+}
