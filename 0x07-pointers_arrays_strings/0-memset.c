@@ -1,23 +1,20 @@
-/*
- * 0x07. C - Even more pointers, arrays and strings
- * task 0
- */
-#include "main.h"
-#include "stdio.h"
+#include "holberton.h"
+
 /**
- * _memset -  fills memory buffer with a constant byte.
- * @s: array refrance
- * @b: constant byte
- * @n: buffer size
- * Return: s array refrance
+ * _memset - a function that fills memory with constant bytes
+ * @s: location to fill
+ * @b: char to fill location with
+ * @n: number of bytes to fill
+ * Return: returns pointer to location filled
  */
 char *_memset(char *s, char b, unsigned int n)
 {
-	unsigned int i;
+	char *start = s;
 
-	for (i = 0; i < n; i++)
+	while (n--)
 	{
-		s[i] = b;
+		*s = b;
+		s++;
 	}
-	return (s);
+	return (start);
 }
